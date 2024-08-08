@@ -2,8 +2,9 @@
 
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
-var rect; // used to reference frame bounds
-lib.ssMetadata = [];
+lib.ssMetadata = [
+		{name:"ATOMIC_atlas_1", frames: [[553,0,375,375],[930,0,375,375],[1307,0,375,375],[553,377,375,375],[930,377,375,375],[1307,377,375,375],[0,553,375,375],[377,754,375,375],[754,754,375,375],[0,0,551,551],[1508,754,369,369],[1131,754,375,375]]}
+];
 
 
 (lib.AnMovieClip = function(){
@@ -615,7 +616,6 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	// Layer_2 (mask)
 	var mask_6 = new cjs.Shape();
 	mask_6._off = true;
 	mask_6.graphics.p("ApwJxIAAzhIThAAIAAThg");
